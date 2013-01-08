@@ -39,9 +39,9 @@ def getJson(request,carrier,flight,year,month,day):
     p.clientsID = 1;
     p.save();
     
-    current = currentData.objects.get(pk=1)
+    #current = currentData.objects.get(pk=1)
     #current.record.add(p);
-    current.save();
+    #current.save();
     
     return HttpResponse(flightInfo);
 
