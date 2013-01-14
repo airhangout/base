@@ -1,0 +1,16 @@
+<html>
+<head>
+	<title>Register</title>
+</head>
+
+<body>
+	<form action="../loginResult/" method="post">{% csrf_token %}
+		Email: <input type="text" name="username"><br>
+		Password: <input type="password" name="pwd"><br>
+		<input type="submit" value="login">
+	</form>
+	<form action="../register/">
+		<input type="submit" value="register">
+	</form>
+</body>
+</html>
